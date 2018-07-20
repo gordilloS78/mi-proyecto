@@ -80,7 +80,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Mi primer proyecto
+                    Mi-primer-proyecto
                 </div>
 
                 <div class="links">
