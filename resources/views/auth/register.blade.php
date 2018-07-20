@@ -5,14 +5,14 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header">{{ __('Registro') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nombre') }}</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail ') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
@@ -54,17 +54,30 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirmar Password') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
 
+
+                        <div class="form-group dropdown mr-1">
+    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+      Roles
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+      <a class="dropdown-item" href="#">Administrador</a>
+      <a class="dropdown-item" href="#">Usuario</a>
+      <a class="dropdown-item" href="#">Invitado</a>
+    </div>
+  </div>
+
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                    {{ __('Registrar') }}
                                 </button>
                             </div>
                         </div>
