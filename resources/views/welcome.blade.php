@@ -1,4 +1,6 @@
-<!doctype html>
+
+
+{{-- <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
@@ -64,8 +66,21 @@
                 margin-bottom: 30px;
             }
         </style>
-    </head>
-    <body>
+    </head>  --}}
+    @extends('admin.template.main')
+
+    @section('title','Home')
+
+
+    @section('content')
+
+        <h1>Es es un boton de bootstrap</h1>
+        <a href="" class="btn btn-success" >Soy un boton de bootstrap</a>
+
+    @endsection
+     
+    {{-- <body>
+        
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -78,20 +93,6 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Mi-primer-proyecto
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                    <a href="https://github.com/gordilloS78">Mi GitHub</a>
-                </div>
-            </div>
         </div>
     </body>
-</html>
+</html> --}}
